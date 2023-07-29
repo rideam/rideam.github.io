@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+// import { getCollection } from "astro:content";
+
+// const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+//
+// const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋 I'm</div>
+    <div class="text-5xl py-2 font-bold">Tatenda Muvhu</div>
+    <div class="text-xl py-4 font-normal">Electrical and Computer Engineer • Software Developer • Blockchain Enthusiast • MPhil FinTech </div>
+    <div class="py-2 text-justif">
+      <text class="text-lg y">
+        My passion is good software using industry proven technologies and best practices. From the implementation of customized software solutions to enterprise application development and integration, e-business portals, e-integration, web and mobile application development, I have the right skill set to implement solutions on any platform. Get in touch and lets discuss your project.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://www.linkedin.com/in/tatenda-muvhu" target="_blank"> Let's connect!</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Bima - Weather index crop insurance"
+    img="projects/bima.png"
+    desc="A blockchain enabled weather index crop insurance platform for smallholder farmers powered by the Algorand blockchain."
+    url="https://github.com/rideam/bima"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Mudala - Carbon Credits marketplace"
+    img="projects/mudala.png"
+    desc="A prototype carbon-credit marketplace powered by the Ethereum blockchain I designed and implemented to showcase the potential of using blockchain technology to enhance carbon offsetting projects."
+    url="https://github.com/rideam/mudala"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Mobile - Android Apps"
+    img="projects/android.png"
+    desc="A collection of Android applications I developed and published on the Google Play"
+    url="https://play.google.com/store/apps/dev?id=6821949358936197961"
+  />
+
+ <!-- <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }-->
+</BaseLayout>

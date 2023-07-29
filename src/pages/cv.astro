@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    A highly skilled and forward-thinking professional who possesses a unique blend of critical and innovative thinking that enables me to tackle complex engineering and software problems with ease. With a proven track record of delivering results on time and within budget, I am a fast learner who constantly seeks to enhance my technical expertise and stay abreast with emerging technologies. Whether working independently or as part of a team, I am committed to delivering exceptional results that drive business success.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="MPhil, Financial Technology"
+      subtitle="2022 - 2023 University of Cape Town, Cape Town, South Africa"
+    />
+    <TimeLineElement
+      title="BSc, Electrical & Computer Engineering"
+      subtitle="2015 - 2018 University of Cape Town, Cape Town, South Africa"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Engineer - Educative Tech (Pty) Ltd"
+      subtitle="2020 - Present, Cape Town, South Africa"
+    >
+      - Developing LTI tools to extend Canvas LMS. <br>
+      - Developing modules to extend Odoo ERP. <br>
+      - Maintaining infrastructure hosted on AWS.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Developer and Quality Assurance Engineer - Ritza B.V."
+      subtitle="2021 - Present, Fully Remote, The Netherlands"
+    >
+      - Developing and maintaining marketing and internal operations tools. <br>
+      - Developing educational technology tutorials. <br>
+      - Maintaining clients products documentation. <br>
+      - Configuring and maintaining infrastructure hosted on Digital Ocean.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Developer - Mandla Money"
+      subtitle="2023 - Present, Cape Town, South Africa"
+    >
+      - Extending the functionality of the Mandla Money wallet.
+    </TimeLineElement>
+  </div>
+
+  <!--<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul>-->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-10">
+    <li>Python</li>
+    <li>Kotlin</li>
+    <li>Java</li>
+    <li>Javascript</li>
+    <li>C++</li>
+    <li>R</li>
+    <li>IoT & Embedded Systems</li>
+    <!--<li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>-->
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Interests</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    - Web and Mobile App development. <br>
+    - Electronics, IoT & Embedded Systems. <br>
+    - Blockchain development. <br>
+    - Cloud Security. <br>
+    - Data Science.
+  </div>
+</BaseLayout>

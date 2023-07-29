@@ -1,0 +1,52 @@
+---
+const {sideBarActiveItemID} = Astro.props;
+const activeClass = "bg-base-300"; // For primary color replace with `active` class
+---
+
+<ul class="menu grow shrink menu-md overflow-y-auto">
+  <li class="text-center"><a class="py-3 text-base" id="home" href="/">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="24"
+         height="24"
+         viewBox="0 0 512 512"
+         style="fill: currentColor;transform: ;msFilter:;">
+      <path d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
+            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+      <path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+    </svg>
+
+    <span class="mx-3">Home</span>
+    </a></li>
+  <li><a class="py-3 text-base" id="projects" href="/projects">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+         height="24"
+         viewBox="0 0 512 512"
+         style="fill: currentColor;transform: ;msFilter:;"><rect x="128" y="128" width="336" height="336" rx="57" ry="57" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path d="M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    <span class="mx-3">Projects</span>
+    </a></li>
+  <!--<li><a class="py-3 text-base" id="services" href="/services">Services</a></li>
+  <li><a class="py-3 text-base" id="store" href="/store">Store</a></li>
+  <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li>-->
+  <li><a class="py-3 text-base " id="cv" href="/cv">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="24"
+         height="24"
+         viewBox="0 0 512 512"
+         style="fill: currentColor;transform: ;msFilter:;"
+    ><path d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path d="M256 56v120a32 32 0 0032 32h120" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    <span class="mx-3">CV</span></a></li>
+  <!--<li>
+      <a
+          class="py-3 text-base"
+          href="mailto:nashjuniornash@gmail.com"
+          target="_blank"
+          referrerpolicy="no-referrer-when-downgrade">Contact</a
+      >
+  </li>-->
+</ul>
+
+<script define:vars={{sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass}}>
+  const activeItemElem = document.getElementById(sideBarActiveItemID);
+  activeItemElem && activeItemElem.classList.add(activeClass);
+</script>

@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Web</div>
+  </div>
+
+  <HorizontalCard
+      title="Bima - Weather index crop insurance"
+      img="projects/bima.png"
+      desc="A blockchain enabled weather index crop insurance platform for smallholder farmers powered by the Algorand blockchain."
+      url="https://github.com/rideam/bima"
+      badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+      title="Mudala - Carbon credits marketplace"
+      img="projects/mudala.png"
+      desc="A prototype carbon-credit marketplace powered by the Ethereum blockchain I designed and implemented to showcase the potential of using blockchain technology to enhance carbon offsetting projects."
+      url="https://github.com/rideam/mudala"
+  />
+
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Mobile</div>
+  </div>
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+      title="Mobile - Android Apps"
+      img="projects/android.png"
+      desc="A collection of Android applications I developed and published on the Google Play"
+      url="https://play.google.com/store/apps/dev?id=6821949358936197961"
+  />
+ <!-- <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 4"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 5"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  />-->
+</BaseLayout>
