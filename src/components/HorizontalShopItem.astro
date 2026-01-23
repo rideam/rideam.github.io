@@ -15,31 +15,31 @@ const {
 import { Image } from "@astrojs/image/components";
 ---
 
-<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<div class="rounded-lg border border-dashed border-gray-400 bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
   <a href={url}>
     <div class="hero-content flex-col md:flex-row">
       {
         img && (
           <Image
-            aspectRatio="16:9"
-            width={750}
+            aspectRatio="5:3"
+            width={850}
             format="webp"
             src={img}
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            class="max-w-full md:max-w-[16rem] rounded-lg object-contain object-top"
           />
         )
       }
-      <div class="grow w-full p-5 md:p-0">
-        <h1 class="text-xl font-bold">
+      <div class="grow w-full p-6 md:p-0 ml-2">
+        <h1 class="text-xl font-bold my-2">
           {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+          {badge && <span class="badge badge-info text-xs rounded mx-2">{badge}</span>}
         </h1>
         <div>
-          <span class="text-xl mr-1"> {pricing}</span>
+          <!--<span class="text-sm mr-1"> {pricing}</span>-->
           <span class="text-md opacity-50 line-through">{oldPricing}</span>
         </div>
-        <p class="py-1 text-1xl">{desc}</p>
+        <p class="py-1 text-justify">{desc}</p>
       </div>
     </div>
   </a>
