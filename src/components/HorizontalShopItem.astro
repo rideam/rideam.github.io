@@ -5,14 +5,14 @@ const {
   desc,
   url,
   badge,
-  pricing,
+  // pricing,
   oldPricing,
-  checkoutUrl,
+/*  checkoutUrl,
   details = true,
   custom_link = false,
-  custom_link_label = "",
+  custom_link_label = '',*/
 } = Astro.props;
-import { Image } from "@astrojs/image/components";
+import { Image } from 'astro:assets';
 ---
 
 <div class="rounded-lg border border-dashed border-gray-400 bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
@@ -21,8 +21,8 @@ import { Image } from "@astrojs/image/components";
       {
         img && (
           <Image
-            aspectRatio="5:3"
             width={850}
+            height={850}
             format="webp"
             src={img}
             alt={title}

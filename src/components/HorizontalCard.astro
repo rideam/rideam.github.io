@@ -1,10 +1,10 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
-import { Image } from "@astrojs/image/components";
+const { title, img, desc, url, badge, tags, target = '_blank' } = Astro.props;
+import { Image } from 'astro:assets';
 ---
 
 <div
-  class="rounded-lg bg-base-100 hover:shadow-xl border border-dashed border-gray-300 transition ease-in-out hover:scale-[102%]"
+  class="rounded-lg bg-base-100 hover:shadow-xl border border-dashed border-gray-400 transition ease-in-out hover:scale-[102%]"
 >
   <a href={url} target={target}>
     <div class="hero-content flex-col md:flex-row">
@@ -12,8 +12,8 @@ import { Image } from "@astrojs/image/components";
         img && (
           <Image
             src={img}
-            aspectRatio="5:4"
             width={850}
+            height={850}
             format="webp"
             alt={title}
             class="max-w-full md:max-w-[16rem] rounded-lg object-contain object-center"

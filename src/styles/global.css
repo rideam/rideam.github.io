@@ -1,3 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
+}
+
+.blog-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.blog-content ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+    padding-top: 1rem;
 }
