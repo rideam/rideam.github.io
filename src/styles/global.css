@@ -1,5 +1,7 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: all
+}
 
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
@@ -24,4 +26,17 @@
 
 .blog-content p {
     padding-top: 1rem;
+}
+
+/* Allow tooltips to overflow sidebar horizontally */
+.drawer,
+.drawer-side,
+.drawer-side aside,
+.drawer-side .menu {
+    overflow: visible !important;
+}
+
+.drawer-side .menu .tooltip::before,
+.drawer-side .menu .tooltip::after {
+    z-index: 9999;
 }
