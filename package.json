@@ -14,10 +14,10 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/rss": "^4.0.15",
-    "@astrojs/sitemap": "^3.7.0",
-    "astro": "^5.16.15",
+    "@astrojs/mdx": "^5.0.3",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.1.8",
     "daisyui": "^5.5.14",
     "dayjs": "^1.11.9",
     "sharp": "^0.34.5"
