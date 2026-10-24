@@ -57,7 +57,6 @@ npm run dev
 │   └── profile.jpg
 │   └── social_img.webp
 ├── astro.config.mjs
-├── tailwind.config.cjs
 ├── package.json
 └── tsconfig.json
 ```
